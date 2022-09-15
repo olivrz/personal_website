@@ -15,10 +15,6 @@ a {
     text-decoration: underline;
 }
 
-.header a {
-    font-size: 18px;
-}
-
 .header a.active {
     font-weight: bold;
 }

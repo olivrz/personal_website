@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+body {
+  background-image: url("/public/background2.jpeg");
+  background-size: 100% 50%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -20,16 +25,62 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 5vmin);
   color: white;
 }
 
+.header {
+  box-shadow: inset 0vh 1vh 1vh -0.2vh rgba(0,0,0,0.4);
+  text-align: center;
+  margin: auto;
+}
+
+.navbar {
+  margin: 5vmin;
+}
+
+.navLink {
+  color: white;
+  font-size: calc(10px + 1.5vmin);
+  padding: 1vmin;
+}
+
 .App-link {
-  color: #61dafb;
+  color: #000000;
 }
 
 .active {
   font-weight: bold;
+}
+
+.flex-container {
+  height: 400px;
+  width: 95%;
+  display: flex;
+  background-color: rgba(124, 234, 255, 0.67);
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+  border-radius: 3vh;
+}
+
+.item {
+  background-color: red;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;
+}
+
+.section {
+  width: 100%;
+  margin: 5vmin ;
+  text-align: center;
+}
+
+.sectionHeading, .sectionParagraph {
+  margin: 3vmin 2vmin;
+}
+
+.aboutme {
+
 }
 
 @keyframes App-logo-float {
@@ -43,3 +94,6 @@
     transform: translateY(0px);
   }
 }
+
+
+
