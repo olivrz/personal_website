@@ -9,13 +9,13 @@ import Header from '../components/Header';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Header>
 
       </Header>
       <h1>test heading</h1>
       <p>test paragraph</p>
-    </div>
+    </Router>
   );
 }
 
