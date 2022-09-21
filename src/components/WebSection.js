@@ -2,8 +2,20 @@ import React from 'react';
 
 //Import components
 import ExperienceRow from './ExperienceRow';
+import Projects from './Projects';
 
 //Work experience then projects
+
+const renderWebSection = (sectionName) => {
+    switch(sectionName) {
+        case 'experience': {
+
+        }
+        case 'projects': {
+
+        }
+    }
+}
 
 export default function WebSection(){
 
@@ -11,8 +23,8 @@ export default function WebSection(){
         location: 'Rutgers University',
         title: "Bachelor of Science in Computer Engineering",
         date: "Sept. 2020 - May 2024",
-        description: "GPA: 3.8/4.0, Dean’s List (Fall 2020 – Spring 2022), minor in Computer Science " +
-            "Computer Engineering courses: Computer Architecture and Assembly Language, Electronic Devices, Linear Systems and Signals, Digital Logic Design " +
+        description: "GPA: 3.8/4.0, Dean’s List (Fall 2020 – Spring 2022), minor in Computer Science\n" +
+            "Computer Engineering courses: Computer Architecture and Assembly Language, Electronic Devices, Linear Systems and Signals, Digital Logic Design\n" +
             "Computer Science courses: Software Methodology, Data Structures and Algorithms, Discrete Structures I, Principles of Information and Databases."
     }
 
@@ -40,18 +52,24 @@ export default function WebSection(){
     }
 
     return (
-        <div className="row section featured topspace align-items-center">
-            <h2 className="section-title">Experience</h2>
-            <h3 className="experience-title">Education</h3>
-            {/*Render two education rows w/ buttons that link to more details*/}
-            <ExperienceRow experienceDetails={rutgersExperienceDetails}/>
-            <ExperienceRow experienceDetails={hillsExperienceDetails} />
+        <div>
+            <div className="row section topspace align-items-center">
+                <h2 className="section-title">Experience</h2>
+                <h3 className="experience-title">Education</h3>
+                {/*Render two education rows w/ buttons that link to more details*/}
+                <ExperienceRow experienceDetails={rutgersExperienceDetails}/>
+                <ExperienceRow experienceDetails={hillsExperienceDetails} />
 
-            <h3 className="experience-title">Work Experience</h3>
-            {/* Render two work experience rows w/ buttons that link to more details*/}
-            <ExperienceRow experienceDetails={shiExperienceDetails} />
-            <ExperienceRow experienceDetails={edcDetails} />
+                <h3 className="experience-title">Work Experience</h3>
+                {/* Render two work experience rows w/ buttons that link to more details*/}
+                <ExperienceRow experienceDetails={shiExperienceDetails} />
+                <ExperienceRow experienceDetails={edcDetails} />
+            </div>
 
+            <div className="row section topspace align-items-center">
+                <h2 className="section-title">Projects</h2>
+                <Projects />
+            </div>
         </div>
     )
 }

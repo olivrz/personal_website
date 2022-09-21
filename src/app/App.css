@@ -117,6 +117,7 @@ body {
 .experience-row {
   text-align: left;
   horiz-align: left;
+  width: 100%;
 }
 
 h3.experience-title {
@@ -143,6 +144,22 @@ h3.experience-title {
 
 .experience-location,.experience.date {
   width: 100%;
+}
+
+.pictureBox{
+  width: 50%;
+  display: inline-flex;
+  padding: 1vmin;
+}
+
+.picture-title {
+  display: inline;
+}
+
+.picture {
+  width: 100%;
+  max-width: 100%;
+  max-height: 80%;
 }
 
 .aboutme {

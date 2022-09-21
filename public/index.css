@@ -79,7 +79,8 @@ ul {
 }
 
 p {
-    line-height: 33px;
+    line-height: 3.5vmin;
+    font-size: calc(1.55vmin + 3px);
 }
 
 p:not(:last-of-type) {
@@ -129,6 +130,10 @@ label > div {
 h2 {
     font-size: calc(5vmin + 4px);
     margin-top: 18px;
+}
+
+h3 {
+    font-size: calc(3.5vmin + 4px);
 }
 
 h4 {
