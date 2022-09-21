@@ -71,7 +71,13 @@ body {
 
 .lead {
   display: inline-flex;
-  width: 70%;
+  width: 60%;
+}
+
+.section-title {
+  display: inline;
+  text-align: center;
+  width: 100%
 }
 
 .App-link {
@@ -99,13 +105,44 @@ body {
 }
 
 .section {
-  width: 100%;
-  margin: 5vmin ;
+  margin: 12vmin;
   text-align: center;
+  max-width: 100%;
 }
 
 .sectionHeading, .sectionParagraph {
   margin: 3vmin 2vmin;
+}
+
+.experience-row {
+  text-align: left;
+  horiz-align: left;
+}
+
+h3.experience-title {
+  text-align: left;
+  margin: 4vmin 0;
+  width: 100%;
+}
+
+.experience {
+  width: 100%;
+}
+
+.experience-left {
+  max-width: 30%;
+}
+.experience-right {
+  max-width: 70%;
+}
+.experience-left, .experience-right {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+.experience-location,.experience.date {
+  width: 100%;
 }
 
 .aboutme {

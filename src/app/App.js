@@ -25,6 +25,7 @@ function App() {
 
       </Router>
           <About />
+          <WebSection />
       </div>
   );
 }
