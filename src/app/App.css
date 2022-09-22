@@ -180,6 +180,10 @@ h3.experience-title {
 
 }
 
+.media-component {
+  display: grid;
+}
+
 @keyframes App-logo-float {
   0% {
     transform: translateY(0);
