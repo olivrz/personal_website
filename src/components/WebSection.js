@@ -55,7 +55,7 @@ export default function WebSection(){
         <div>
             <div className="color2">
                 <div className="row section topspace align-items-center">
-                    <h2 className="section-title">Experience</h2>
+                    <h2 className="section-title" id="experience">Experience</h2>
                     <h3 className="experience-title">Education</h3>
                     {/*Render two education rows w/ buttons that link to more details*/}
                     <ExperienceRow experienceDetails={rutgersExperienceDetails}/>
@@ -68,7 +68,7 @@ export default function WebSection(){
                 </div>
         </div>
             <div className="row section topspace align-items-center">
-                <h2 className="section-title">Projects</h2>
+                <h2 className="section-title" id="projects">Projects</h2>
                 <Projects />
             </div>
         </div>

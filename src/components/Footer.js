@@ -76,7 +76,7 @@ export default function Footer() {
     return (
         <div className="footer">
             <div className="flex-container background-gray">
-                <h2 className="section-title contact-title">Contact</h2>
+                <h2 className="section-title contact-title" id="contact">Contact</h2>
                 <div className="row link-box">
                     <SocialMedia mediaInfo={mediaDetails.linkedIn}/>
                     <SocialMedia mediaInfo={mediaDetails.gitHub}/>

@@ -4,7 +4,7 @@ export default function Header() {
 
 
     return (
-        <div id="head">
+        <div id="head" className="parallax">
             <h1 id="logo" className="text-center">
                     <div className="title">Oliver Rzepecki</div>
                     <div className="tagline">Aspiring Software Engineer<br></br>

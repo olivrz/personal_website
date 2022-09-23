@@ -8,9 +8,9 @@ export default function NavBar () {
     return (
         <div className="container-fluid navbar">
             {/*<img src='/images/nyc_skyline.jpg' id="head-image" /> */}
-            <NavLink to="/about" className="navLink">About</NavLink>
-            <NavLink to="/projects" className="navLink">Projects</NavLink>
-            <NavLink to="/experience" className="navLink">Experience</NavLink>
+            <a href="#experience" className="navLink">Experience</a>
+            <a href="#projects" className="navLink">Projects</a>
+            <a href="#contact" className="navLink">Contact</a>
         </div>
     )
 }
