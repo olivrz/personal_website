@@ -54,7 +54,7 @@ const getMediaIcon = (media) => {
 
 const mediaDetails = {
     linkedIn: {
-        link: 'https://www.linkedin.com/in/oliver-rzepecki/',
+        link: 'www.linkedin.com/in/oliver-rzepecki/',
         icon: getMediaIcon('linkedIn')
     },
     gitHub: {
@@ -74,13 +74,17 @@ const mediaDetails = {
 
 export default function Footer() {
     return (
-        <div className="footer flex-container background-gray">
-            <h2 className="section-title contact-title">Contact</h2>
-            <div className="row link-box">
-                <SocialMedia mediaInfo={mediaDetails.linkedIn}/>
-                <SocialMedia mediaInfo={mediaDetails.gitHub}/>
-                <SocialMedia mediaInfo={mediaDetails.resume}/>
-                <SocialMedia mediaInfo={mediaDetails.email}/>
+        <div className="footer">
+            <div className="flex-container background-gray">
+                <h2 className="section-title contact-title">Contact</h2>
+                <div className="row link-box">
+                    <SocialMedia mediaInfo={mediaDetails.linkedIn}/>
+                    <SocialMedia mediaInfo={mediaDetails.gitHub}/>
+                </div>
+                <div className="row link-box">
+                    <SocialMedia mediaInfo={mediaDetails.resume}/>
+                    <SocialMedia mediaInfo={mediaDetails.email}/>
+                </div>
             </div>
         </div>
     )

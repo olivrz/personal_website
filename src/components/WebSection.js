@@ -53,19 +53,20 @@ export default function WebSection(){
 
     return (
         <div>
-            <div className="row section topspace align-items-center">
-                <h2 className="section-title">Experience</h2>
-                <h3 className="experience-title">Education</h3>
-                {/*Render two education rows w/ buttons that link to more details*/}
-                <ExperienceRow experienceDetails={rutgersExperienceDetails}/>
-                <ExperienceRow experienceDetails={hillsExperienceDetails} />
+            <div className="color2">
+                <div className="row section topspace align-items-center">
+                    <h2 className="section-title">Experience</h2>
+                    <h3 className="experience-title">Education</h3>
+                    {/*Render two education rows w/ buttons that link to more details*/}
+                    <ExperienceRow experienceDetails={rutgersExperienceDetails}/>
+                    <ExperienceRow experienceDetails={hillsExperienceDetails} />
 
-                <h3 className="experience-title">Work Experience</h3>
-                {/* Render two work experience rows w/ buttons that link to more details*/}
-                <ExperienceRow experienceDetails={shiExperienceDetails} />
-                <ExperienceRow experienceDetails={edcDetails} />
-            </div>
-
+                    <h3 className="experience-title">Work Experience</h3>
+                    {/* Render two work experience rows w/ buttons that link to more details*/}
+                    <ExperienceRow experienceDetails={shiExperienceDetails} />
+                    <ExperienceRow experienceDetails={edcDetails} />
+                </div>
+        </div>
             <div className="row section topspace align-items-center">
                 <h2 className="section-title">Projects</h2>
                 <Projects />

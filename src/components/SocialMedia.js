@@ -8,8 +8,8 @@ export default function SocialMedia(props) {
         <div className="media-component">
 
             <a href={props.mediaInfo.link}>
-                <span>{props.mediaInfo.link}</span>
                 {props.mediaInfo.icon}
+                <span>{props.mediaInfo.link}</span>
             </a>
 
         </div>
