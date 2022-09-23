@@ -9,6 +9,7 @@ import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import About from '../components/About';
 import WebSection from '../components/WebSection';
+import Footer from '../components/Footer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       </Router>
           <About />
           <WebSection />
+          <Footer />
       </div>
   );
 }

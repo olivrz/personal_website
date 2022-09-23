@@ -77,7 +77,7 @@ body {
 .section-title {
   display: inline;
   text-align: center;
-  width: 100%
+  width: 100%;
 }
 
 .App-link {
@@ -89,13 +89,13 @@ body {
 }
 
 .flex-container {
-  height: 400px;
-  width: 95%;
   display: flex;
-  background-color: rgba(124, 234, 255, 0.67);
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(68, 67, 67);
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
-  border-radius: 3vh;
+  height: 50vmin;
 }
 
 .item {
@@ -180,7 +180,16 @@ h3.experience-title {
 
 }
 
+.contact-title {
+  color: white;
+  text-emphasis: none;
+}
+
 .media-component {
+  display: grid;
+}
+
+.link-box {
   display: grid;
 }
 
