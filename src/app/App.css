@@ -11,12 +11,6 @@ body {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -29,8 +23,37 @@ body {
 }
 
 .header {
-  box-shadow: inset 0vh 1vh 1vh -0.2vh rgba(0,0,0,0.4);
+  box-shadow: inset 0 1vh 1vh -0.2vh rgba(0,0,0,0.4);
   text-align: center;
+  margin: auto;
+}
+
+.header-fullname {
+  color: black;
+  padding-bottom: 2vmin;
+  border-bottom: 1px black solid;
+  width: 40vw;
+  margin: auto;
+}
+
+.header-title {
+  color: whitesmoke;
+  padding-top: 2vmin;
+}
+
+.header-email:hover {
+  color: darkblue;
+}
+
+.header-email {
+  color: whitesmoke;
+  text-underline: none;
+}
+
+.tagline {
+  display: grid;
+  align-content: center;
+  justify-content: center;
   margin: auto;
 }
 
@@ -54,7 +77,6 @@ body {
   position: sticky;
 }
 
-
 #head-image {
   background-size: contain;
 }
@@ -66,7 +88,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  border: 1px grey solid;
+  border-bottom: 1px rgba(50, 50, 93, 0.2) solid;
   padding: 0.5vmin 15vmin;
 }
 
@@ -76,16 +98,39 @@ body {
   padding: 2vmin;
   min-width: 20vmin;
   text-align: center;
-
 }
 
 .topspace {
   margin-top: 40px;
 }
 
-.lead {
-  display: inline-flex;
-  width: 60%;
+@media only screen and (max-width: 600px) {
+  .lead {
+    display: inline-flex;
+    min-width: 60%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .lead {
+    display: inline-flex;
+    width: 60%;
+  }
+}
+
+
+.aboutme {
+  font-size: calc(3vmin + 4px);
+  line-height: calc(3vmin + 8px);
+}
+
+.about-holder {
+  padding: 6vmin 0;
+  min-height: 40vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-title {
@@ -107,7 +152,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0vmin 12vmin;
+  margin: 0 12vmin;
   height: 50vmin;
   width: 100%;
   align-content: flex-start;
@@ -115,13 +160,13 @@ body {
 
 .item {
   background-color: red;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   color: white;
 }
 
 .section {
-  margin: 0vmin 12vmin;
-  padding: 4vmin 0vmin;
+  margin: 0 12vmin;
+  padding: 4vmin 0;
   text-align: center;
   max-width: 100%;
   display: flex;
@@ -153,6 +198,19 @@ h3.experience-title {
   background: rgba(185, 223, 249, 0.66);
 }
 
+.section-shadow {
+  box-shadow: rgba(38, 57, 77, 0.25) 0 0 20px 0;
+}
+
+.section-shadow-light {
+  box-shadow: rgba(38, 57, 77, 0.15) 0 0 20px 0;
+}
+
+.section-shadow-dark {
+  box-shadow: rgba(38, 57, 77, 0.4) 0 0 25px 0;
+}
+
+
 .experience {
   width: 100%;
 }
@@ -174,15 +232,18 @@ h3.experience-title {
 }
 
 .pictureBox{
-  width: 40%;
+  width: 50%;
   min-height: 35%;
   height: 50%;
-  display: -ms-flexbox;
+  display: grid;
   padding: 2vmin;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 0.75 / 1;
 }
 
 .picture-grid {
-  height: calc(50vmin + 100px);
+  height: calc(70vmin + 100px);
   padding: 2vmin;
 }
 
@@ -192,6 +253,10 @@ h3.experience-title {
 
 .picture-holder {
   height: 80%;
+  width:80%;
+  justify-content: center;
+  margin: auto;
+  display: flex;
 }
 
 .picture {
@@ -199,8 +264,12 @@ h3.experience-title {
   max-width: 100%;
 }
 
-.aboutme {
-
+.project-title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  height: 5vmin;
 }
 
 .contact-title {
@@ -211,6 +280,12 @@ h3.experience-title {
 
 .media-component {
   display: inline;
+  width: 60%;
+  margin: auto;
+}
+
+.media-button {
+  box-shadow: rgba(0, 0, 0, 0.35) 0 7px 15px;
 }
 
 .link-box {
@@ -223,6 +298,14 @@ h3.experience-title {
   align-content: center;
   font-size: calc(1vmin + 6px);
   margin: 0 0 2vmin 0;
+}
+
+.link-text {
+  padding: 0 1vmin;
+}
+
+.link-icon-divider {
+  display: flex;
 }
 
 .footer {

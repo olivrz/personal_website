@@ -4,19 +4,6 @@ import React from 'react';
 import ExperienceRow from './ExperienceRow';
 import Projects from './Projects';
 
-//Work experience then projects
-
-const renderWebSection = (sectionName) => {
-    switch(sectionName) {
-        case 'experience': {
-
-        }
-        case 'projects': {
-
-        }
-    }
-}
-
 export default function WebSection(){
 
     const rutgersExperienceDetails = {
@@ -53,7 +40,7 @@ export default function WebSection(){
 
     return (
         <div>
-            <div className="color2">
+            <div className="color2 section-shadow">
                 <div className="row section topspace align-items-center">
                     <h2 className="section-title" id="experience">Experience</h2>
                     <h3 className="experience-title">Education</h3>
@@ -67,7 +54,7 @@ export default function WebSection(){
                     <ExperienceRow experienceDetails={edcDetails} />
                 </div>
         </div>
-            <div className="row section topspace align-items-center">
+            <div className="row section topspace align-items-center mx-1">
                 <h2 className="section-title" id="projects">Projects</h2>
                 <Projects />
             </div>

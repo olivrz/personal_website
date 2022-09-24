@@ -144,3 +144,7 @@ h4 {
 h5 {
     font-size: calc(1.75vmin + 4px);
 }
+
+h6 {
+    font-size: calc(1.5vmin + 4px);
+}

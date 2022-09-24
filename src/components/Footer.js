@@ -5,7 +5,7 @@ const getMediaIcon = (media) => {
     switch(media) {
         case 'pdf': {
             return (
-                <button type="button" className="btn btn-secondary">
+                <button type="button" className="btn btn-secondary media-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                          className="bi bi-file-earmark-pdf-fill" viewBox="0 0 16 16">
                         <path
@@ -18,7 +18,7 @@ const getMediaIcon = (media) => {
         }
         case 'gitHub': {
             return (
-                <button type="button" className="btn btn-secondary">
+                <button type="button" className="btn btn-secondary media-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                          className="bi bi-github" viewBox="0 0 16 16">
                         <path
@@ -29,7 +29,7 @@ const getMediaIcon = (media) => {
         }
         case 'linkedIn': {
             return (
-                <button type="button" className="btn btn-secondary">
+                <button type="button" className="btn btn-secondary media-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                          className="bi bi-linkedin" viewBox="0 0 16 16">
                         <path
@@ -40,7 +40,7 @@ const getMediaIcon = (media) => {
         }
         case 'email': {
             return (
-                <button type="button" className="btn btn-secondary">
+                <button type="button" className="btn btn-secondary media-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                          className="bi bi-envelope-fill" viewBox="0 0 16 16">
                         <path
@@ -48,6 +48,9 @@ const getMediaIcon = (media) => {
                     </svg>
                 </button>
             )
+        }
+        default: {
+            return;
         }
     }
 }
@@ -69,12 +72,13 @@ const mediaDetails = {
         link: 'mailto:oliver.rzepecki@rutgers.edu',
         icon: getMediaIcon('email')
     }
+
 }
 
 
 export default function Footer() {
     return (
-        <div className="footer">
+        <div className="footer section-shadow-dark">
             <div className="flex-container background-gray">
                 <h2 className="section-title contact-title" id="contact">Contact</h2>
                 <div className="row link-box">
