@@ -1,9 +1,9 @@
 import React from 'react';
 
 import p1_pic from '../images/Project1_Picture.png';
-import p2_pic from '../images/Project2_picture.PNG';
-import p3_pic from '../images/Project3_picture.PNG';
-import p4_pic from '../images/Project4_picture.PNG';
+import p2_pic from '../images/Project2_picture.png';
+import p3_pic from '../images/Project3_picture.png';
+import p4_pic from '../images/Project4_picture.png';
 
 
 export default function Projects() {
