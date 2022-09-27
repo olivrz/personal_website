@@ -1,13 +1,11 @@
 import React from 'react';
 
-import pic1 from '../images/nyc_skyline.jpg';
+import p1_pic from '../images/Project1_Picture.png';
+import p2_pic from '../images/Project2_picture.PNG';
+import p3_pic from '../images/Project3_picture.PNG';
+import p4_pic from '../images/Project4_picture.PNG';
 
-/*
-import project1_pic from '../images/';
-import project2_pic from '../images/';
-import project3_pic from '../images/';
-import project4_pic from '../images/';
-*/
+
 export default function Projects() {
     return (
         <div className="row picture-grid">
@@ -15,7 +13,7 @@ export default function Projects() {
             <div className="pictureBox">
                 <div className="projects picture-holder">
                     <a href="https://github.com/olivrz/CafeOrderManager" target="_blank">
-                        <img src={pic1} className="picture" alt="Cafe Project"/>
+                        <img src={p1_pic} className="picture" alt="Cafe Project"/>
                     </a>
                 </div>
                 <a href="https://github.com/olivrz/CafeOrderManager" target="_blank">
@@ -26,7 +24,7 @@ export default function Projects() {
             <div className="pictureBox">
                 <div className="projects picture-holder">
                     <a href="https://github.com/olivrz/express.js-quotes-api" target="_blank">
-                        <img src={pic1} className="picture" alt="Quotes API Project"/>
+                        <img src={p2_pic} className="picture" alt="Quotes API Project"/>
                     </a>
                 </div>
                 <a href="https://github.com/olivrz/express.js-quotes-api" target="_blank">
@@ -37,7 +35,7 @@ export default function Projects() {
             <div className="pictureBox">
                 <div className="projects picture-holder">
                     <a href="https://github.com/olivrz/personal_website" target="_blank">
-                        <img src={pic1} className="picture" alt="Personal Website Project"/>
+                        <img src={p3_pic} className="picture" alt="Personal Website Project"/>
                     </a>
                 </div>
                 <a href="https://github.com/olivrz/personal_website" target="_blank">
@@ -48,7 +46,7 @@ export default function Projects() {
             <div className="pictureBox">
                 <div className="projects picture-holder">
                     <a href="https://github.com/olivrz/Film-Finder" target="_blank">
-                        <img src={pic1} className="picture" alt="Film Finder Project"/>
+                        <img src={p4_pic} className="picture" alt="Film Finder Project"/>
                     </a>
 
                 </div>
